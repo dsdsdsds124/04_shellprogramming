@@ -1,0 +1,82 @@
+# .bashrc
+
+# User specific aliases and functions
+
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+#
+# Sfecific configuration
+#
+export PS1='\[\e[31;1m\][\u@\h\[\e[33;1m\] \w]\$ \[\e[m\]'
+alias vi='/usr/bin/vim'
+alias c='clear'
+
+
+#
+# VSCode
+#
+alias vscode='code --no-sandbox --user-data-dir ~/workspace'
+alias aa='chmod 700 /root/bin/*.sh'
+
+
+
+
+
+
+##########################################################################
+# Sfecific configuration
+##########################################################################
+export PS1='\[\e[31;1m\][\u@\h\[\e[33;1m\] \w]$ \[\e[m\]'
+alias lsf='ls -l | grep "^-"'
+alias lsd='ls -l | grep "^d"'
+alias ls='ls --color=auto -h -F'
+alias c='clear'
+alias cear='clear'
+alias clar='clear'
+alias pps='ps -ef | head -1 ; ps -ef | grep '
+alias nstate='netstat -antup | head -2 ; netstat -antup | grep '
+alias tree='env LANG=C tree'
+alias vi='/usr/bin/vim'
+alias grep='grep --color=auto -i'
+alias df='df -h -T'
+alias chrome='/usr/bin/google-chrome --no-sandbox'
+alias RS='rsync -avz --delete -e ssh'
+alias LS='rsync -av --delete'
+alias fwcmd='firewall-cmd'
+alias fwlist='firewall-cmd --list-all'
+alias fwreload='firewall-cmd --reload'
+
+
+##########################################################################
+# Sfecific configuration
+##########################################################################
+export PS1='\[\e[31;1m\][\u@\h\[\e[33;1m\] \w]$ \[\e[m\]'
+alias lsf='ls -l | grep "^-"'
+alias lsd='ls -l | grep "^d"'
+alias ls='ls --color=auto -h -F'
+alias c='clear'
+alias cear='clear'
+alias clar='clear'
+alias pps='ps -ef | head -1 ; ps -ef | grep '
+alias nstate='netstat -antup | head -2 ; netstat -antup | grep '
+alias tree='env LANG=C tree'
+alias vi='/usr/bin/vim'
+alias grep='grep --color=auto -i'
+alias df='df -h -T'
+alias chrome='/usr/bin/google-chrome --no-sandbox'
+alias RS='rsync -avz --delete -e ssh'
+alias LS='rsync -av --delete'
+alias fwcmd='firewall-cmd'
+alias fwlist='firewall-cmd --list-all'
+alias fwreload='firewall-cmd --reload'
+
+alias vscode='code --no-sandbox --user-data-diir ~/workspace'
+alias chrome='/usr/bin/google-chrome --no-sandbox'
+

@@ -1,0 +1,13 @@
+[U-1] Password policy check
+PASS_MAX_DAYS   99999
+PASS_MIN_DAYS   0
+PASS_MIN_LEN    5
+PASS_WARN_AGE   7
+
+[U-2] End user check
+user01:x:501:501::/home/user01:/bin/bash
+user02:x:502:502::/home/user02:/bin/bash
+user03:x:503:503::/home/user03:/bin/bash
+
+[U-3] PAM check
+auth       sufficient  pam_wheel.so trust use_uid
